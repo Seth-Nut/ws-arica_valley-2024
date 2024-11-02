@@ -2,23 +2,33 @@
 
 
 ![example workflow](https://github.com/fralfaro/DMAT-SJ-Olimpiadas/actions/workflows/documentation.yml/badge.svg)
-[![documentation](https://img.shields.io/badge/📖-docs-brightgreen)](https://fralfaro.github.io/DMAT-SJ-Olimpiadas/)
+[![documentation](https://img.shields.io/badge/📖-docs-brightgreen)](https://seth-nut.github.io/ws-arica_valley-2024/)
 
 
 <header>
 <img src="./images/logo_colegio.png" alt="DMAT" />
 </header>
 
-Este espacio ha sido creado para motivar a los estudiantes a aprender tanto Python como conceptos matemáticos fundamentales. Aquí encontrarás una variedad de ejemplos prácticos y autocontenidos que te ayudarán a comprender y practicar los principios básicos de la programación en Python, así como a explorar aplicaciones matemáticas de manera sencilla y efectiva.
+
+Este espacio ha sido creado para inspirar a los estudiantes del [Colegio Azapa Valley School](https://azapavalley.cl/) a aprender Python y programación. Aquí encontrarás ejemplos prácticos y autocontenidos que te ayudarán a entender los principios básicos de programación en Python de manera sencilla y efectiva.
 
 
+## 🎯 Objetivo del Taller
 
-## Sobre la Iniciativa
+Motivar a los estudiantes en el aprendizaje de Python a través de ejercicios interactivos que desarrollan habilidades prácticas en funciones, manipulación de datos y resolución de problemas.
 
-Este repositorio forma parte del apoyo a las [Olimpiadas de Matemática Federico Santa María 2024](https://matematica.usm.cl/olimpiadas-escolares-de-matematica-usm/), una competencia y actividad de divulgación matemática dirigida a todos los estudiantes de Tercero y Cuarto Año de Enseñanza Media de la región de Valparaíso. Nuestro objetivo es inspirar a los estudiantes a adentrarse en el fascinante mundo de la programación y las matemáticas, fomentando un aprendizaje práctico y atractivo.
+## 📚 Contenidos
 
-## Contenidos del Repositorio
+- **Ejemplos de Python**: Códigos autocontenidos, desde básicos hasta avanzados.
+- **Desafíos de Programación**: Ejercicios prácticos para fortalecer conceptos clave.
+- **Actividades Interactivas**: Recursos dinámicos para un aprendizaje práctico.
 
-- **Ejemplos de Python**: Códigos autocontenidos que cubren desde conceptos básicos hasta aplicaciones más avanzadas.
-- **Problemas Matemáticos**: Ejercicios diseñados para reforzar conceptos matemáticos fundamentales a través de la programación.
-- **Actividades Interactivas**: Recursos y actividades que combinan Python y matemáticas para un aprendizaje dinámico y práctico.
+## 📈 Resultados de Aprendizaje
+
+Al finalizar, los estudiantes podrán:
+
+1. **💻 Comprender conceptos básicos de programación**.
+2. **🌐 Ejecutar y explorar código en un entorno interactivo**.
+3. **🧩 Resolver problemas usando lógica condicional y matemáticas**.
+4. **🔍 Experimentar y modificar código para observar resultados**.
+
