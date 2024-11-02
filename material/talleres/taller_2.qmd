@@ -1,0 +1,351 @@
+# Integración de Python en la Enseñanza de Matemáticas
+
+<center>
+<img src="../../images/professor.png" width="400">
+</center>
+
+Este taller, dirigido a profesores de matemáticas de enseñanza media, busca integrar Python en el currículo para hacer las matemáticas más interactivas y atractivas. A través de ejemplos prácticos, los docentes aprenderán a utilizar Python para enriquecer su enseñanza.
+
+## 🎯 Objetivos del Taller
+
+- Utilizar Python para mejorar la enseñanza de matemáticas.
+- Crear ejercicios de programación que refuercen conceptos matemáticos.
+- Proporcionar herramientas prácticas para resolver problemas matemáticos con Python.
+
+## Contexto y Justificación
+
+Integrar Python en la enseñanza de matemáticas permite explorar conceptos de forma dinámica. Su sintaxis clara y numerosas bibliotecas facilitan la demostración de temas, desde aritmética básica hasta cálculo y estadística, enriqueciendo la comprensión matemática de los estudiantes.
+
+### Python en la Educación Media
+
+Incluir Python en la enseñanza media fomenta el interés en ciencias de la computación y refuerza el aprendizaje matemático. Sus beneficios clave son:
+
+1. **Preparación para el futuro**: Desarrolla competencias prácticas para un mundo tecnológico y orientado a datos.
+
+2. **Aplicación en la vida real**: Permite aplicar conceptos matemáticos en problemas reales, haciendo el aprendizaje más tangible.
+
+3. **Pensamiento crítico**: Fomenta el razonamiento lógico y la resolución eficiente de problemas matemáticos.
+
+<center>
+<img src="../../images/n10.png" width="700">
+</center>
+
+
+### Python en el Día a Día 
+
+<center>
+<img src="../../images/n07.png" width="600">
+</center>
+
+
+```{python}
+#| echo: false
+from great_tables import GT
+import pandas as pd
+
+data_impacto = {
+    "Aspecto": [
+        "Impacto en la Educación", 
+        "", 
+        "Demanda Laboral", 
+        "", 
+        "Perspectiva de Género", 
+        "", 
+        "Matemáticas Aplicadas", 
+        ""
+    ],
+    "Detalle": [
+        "50% de países altos y 60% medios-altos han integrado ciencias de la computación.",
+        "Solo el 43% de estudiantes en países bajos tienen acceso a Internet en la escuela.",
+        "22% de aumento proyectado en desarrolladores de software.",
+        "33% de crecimiento anual en científicos de datos y analistas financieros.",
+        "21% de puestos en informática son ocupados por mujeres.",
+        "Mujeres en matemáticas: 47% de estudiantes - solo 29% en puestos académicos.",
+        "Flexibilidad en cálculos con NumPy y Pandas.",
+        "85% de científicos de datos prefieren Python para machine learning."
+    ],
+    "Fuente": [
+        "OCDE",
+        "UNESCO",
+        "U.S. Bureau of Labor Statistics",
+        "LinkedIn",
+        "OCDE",
+        "AAUW",
+        "NumFOCUS, Stack Overflow",
+        "Kaggle, Stack Overflow"
+    ]
+}
+
+df_impacto = pd.DataFrame(data_impacto)
+
+(
+    GT(df_impacto).opt_stylize(style=2, color="blue")
+)
+```
+
+
+
+## Ejercicios y Ejemplos Prácticos
+
+### ✅ Básicos
+
+
+#### 1. Conversión de Fahrenheit a Celsius
+
+Este ejercicio enseña a los estudiantes a utilizar la fórmula de conversión para transformar temperaturas de Fahrenheit a Celsius. La fórmula es: 
+
+$$ C = \frac{(F - 32) \times 5}{9}$$
+
+- [Conversión de grados Fahrenheit a Celsius - Wikipedia](https://es.wikipedia.org/wiki/Grado_Fahrenheit#Conversi%C3%B3n_a_grados_Celsius)
+
+```{pyodide-python}
+def fahrenheit_a_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5 / 9
+    return celsius
+
+# Ejemplo de uso
+temperatura_f = 100
+print(f"La temperatura {temperatura_f}°F es igual a {fahrenheit_a_celsius(temperatura_f):.2f}°C.")
+```
+
+
+#### 2. Cálculo del Índice de Masa Corporal (IMC)
+
+Este ejercicio enseña a los estudiantes a calcular el IMC utilizando la fórmula:
+
+$$ IMC = \frac{peso \, (kg)}{altura^2 \, (m^2)}$$
+
+- [Índice de Masa Corporal - Wikipedia](https://es.wikipedia.org/wiki/%C3%8Dndice_de_masa_corporal)
+
+```{pyodide-python}
+def calcular_imc(peso, altura):
+    imc = peso / (altura ** 2)
+    return imc
+
+# Ejemplo de uso
+peso = 70  # en kilogramos
+altura = 1.75  # en metros
+print(f"El IMC es {calcular_imc(peso, altura):.2f}.")
+```
+
+
+
+
+#### 3. Verificar si un Número es Par o Impar
+
+Este ejercicio enseña a los estudiantes a usar el operador módulo (`%`) para determinar si un número es divisible por 2, clasificándolo como "par" o "impar".
+
+- [Número par e impar - Wikipedia](https://es.wikipedia.org/wiki/N%C3%BAmeros_pares_e_impares)
+
+
+```{pyodide-python}
+def es_par(numero):
+    if numero % 2 == 0:
+        return "par"
+    else:
+        return "impar"
+
+# Ejemplo de uso
+numero = 7
+print(f"El número {numero} es {es_par(numero)}.")
+```
+
+
+### 🔢 Aritmética
+
+
+#### 1. Verificar si un Número es Primo
+
+Este ejercicio enseña a los estudiantes a verificar si un número es primo. Un número primo es un número mayor que 1 que solo tiene dos divisores: 1 y él mismo.
+
+- [Número primo - Wikipedia](https://es.wikipedia.org/wiki/N%C3%BAmero_primo)
+
+```{pyodide-python}
+def es_primo(n):
+    if n <= 1:
+        return f"{n} no es un número primo"
+    for i in range(2, n):
+        if n % i == 0:
+            return f"{n} no es un número primo"
+    return f"{n} es un número primo"
+
+# Ejemplo de uso
+numero = 29
+print(es_primo(numero))
+```
+
+
+#### 2. Conjetura de Collatz
+
+Este ejercicio enseña a los estudiantes sobre la conjetura de Collatz, que sugiere que al tomar cualquier número entero positivo y aplicar la siguiente secuencia, se llegará eventualmente al número 1:
+
+a.  Si el número es par, se divide entre 2.
+b.  Si el número es impar, se multiplica por 3 y se le suma 1.
+
+- [Conjetura de Collatz - Wikipedia](https://es.wikipedia.org/wiki/Conjetura_de_Collatz)
+
+```{pyodide-python}
+def colllatz(n):
+    pasos = []
+    while n != 1:
+        pasos.append(n)
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+    pasos.append(1)
+    return pasos
+
+# Ejemplo de uso
+numero = 6
+resultado = colllatz(numero)
+print(f"La secuencia de Collatz para el número {numero} es: {resultado}.")
+```
+
+
+
+
+### 📐 Geometría 
+
+
+
+
+#### 1. Área y Perímetro de un Rectángulo
+
+Este ejercicio enseña a los estudiantes a calcular el área y el perímetro de un rectángulo utilizando las siguientes fórmulas:
+
+a. **Área**: $A = base \times altura$
+b. **Perímetro**: $P = 2 \times (base + altura)$
+
+- [Rectángulo - Wikipedia](https://es.wikipedia.org/wiki/Rect%C3%A1ngulo)
+
+```{pyodide-python}
+def area_perimetro_rectangulo(base, altura):
+    area = base * altura
+    perimetro = 2 * (base + altura)
+    return area, perimetro
+
+# Ejemplo de uso
+base = 5
+altura = 3
+area, perimetro = area_perimetro_rectangulo(base, altura)
+print(f"El área del rectángulo es {area} y el perímetro es {perimetro}.")
+```
+
+
+
+#### 2. Área y Perímetro de un Círculo
+
+Este ejercicio enseña a los estudiantes a calcular el área y el perímetro (circunferencia) de un círculo utilizando las siguientes fórmulas:
+
+a. **Área**: $A = \pi \times radio^2$
+b. **Perímetro (Circunferencia)**: $C = 2 \times \pi \times radio$
+
+- [Círculo - Wikipedia](https://es.wikipedia.org/wiki/C%C3%ADrculo)
+
+```{pyodide-python}
+import math
+
+def area_perimetro_circulo(radio):
+    area = math.pi * radio ** 2
+    perimetro = 2 * math.pi * radio
+    return area, perimetro
+
+# Ejemplo de uso
+radio = 4
+area, perimetro = area_perimetro_circulo(radio)
+print(f"El área del círculo es {area:.2f} y el perímetro (circunferencia) es {perimetro:.2f}.")
+```
+
+### 🔤 Álgebra 
+
+
+#### 1. Resolución y Gráfica de una Ecuación Cuadrática
+
+Este ejercicio enseña a los estudiantes a resolver ecuaciones cuadráticas de la forma:
+
+$$ ax^2 + bx + c = 0 $$
+
+Utilizando la fórmula cuadrática:
+
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+Y a graficar la función cuadrática.
+
+- [Ecuación cuadrática - Wikipedia](https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_cuadr%C3%A1tica)
+
+```{pyodide-python}
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+
+def resolver_ecuacion_cuadratica(a, b, c):
+    # Calculamos el discriminante
+    discriminante = b**2 - 4*a*c
+    
+    if discriminante < 0:
+        return "No hay soluciones reales"
+    elif discriminante == 0:
+        x = -b / (2*a)
+        return f"Una solución real: x = {x:.2f}"
+    else:
+        x1 = (-b + math.sqrt(discriminante)) / (2*a)
+        x2 = (-b - math.sqrt(discriminante)) / (2*a)
+        return f"Dos soluciones reales: x1 = {x1:.2f}, x2 = {x2:.2f}"
+
+def graficar_ecuacion_cuadratica(a, b, c):
+    x = np.linspace(-10, 10, 400)  # Generamos un conjunto de valores x desde -10 hasta 10 con 400 puntos
+    y = a * x**2 + b * x + c       # Calculamos los valores y de la ecuación cuadrática para cada x
+
+    plt.figure(figsize=(10, 6))     # Creamos una figura para la gráfica con un tamaño específico
+    plt.plot(x, y, label=f'{a}x² + {b}x + {c}', color='blue')  # Graficamos la curva de la ecuación cuadrática
+    
+    plt.axhline(0, color='red', lw=0.8, ls='--')  # Dibujamos una línea horizontal en y = 0 (eje x)
+    plt.axvline(0, color='red', lw=0.8, ls='--')  # Dibujamos una línea vertical en x = 0 (eje y)
+    
+    plt.title('Gráfica de la Ecuación Cuadrática')  # Agregamos un título a la gráfica
+    plt.xlabel('x')  # Etiquetamos el eje x
+    plt.ylabel('f(x)')  # Etiquetamos el eje y
+    
+    plt.xlim(-5, 5)  # Establecemos los límites del eje x
+    plt.ylim(-1, 5)  # Establecemos los límites del eje y
+    
+    plt.grid()  # Activamos la cuadrícula en la gráfica
+    plt.legend()  # Mostramos la leyenda de la gráfica
+    
+    plt.show()  # Mostramos la gráfica en pantalla
+
+# Ejemplo de uso
+a = 1
+b = -3
+c = 2
+resultado = resolver_ecuacion_cuadratica(a, b, c)
+print(f"Para la ecuación {a}x² + {b}x + {c} = 0: {resultado}")
+
+# Graficar la función cuadrática
+graficar_ecuacion_cuadratica(a, b, c)
+```
+
+
+
+
+
+## Conclusiones
+
+La integración de Python en la enseñanza de matemáticas moderniza y enriquece el aprendizaje, facilitando la comprensión de conceptos a través de su sintaxis clara y poderosas bibliotecas.
+
+**Puntos Clave**:
+
+1. **Preparación para el futuro**: Python desarrolla habilidades prácticas esenciales para un mundo tecnológico y laboral en constante cambio.
+
+2. **Reducción de desigualdades**: Es crucial abordar las brechas en el acceso a la tecnología y en la equidad de género para garantizar una educación matemática inclusiva.
+
+3. **Python y Matemáticas**: Como herramienta clave en la enseñanza secundaria, Python permite presentar temas complejos de manera accesible y atractiva, fomentando un aprendizaje significativo.
+
+
+
+::: {.callout-tip collapse="false" title="Desafío para Profesores:"}
+El desafío para los profesores es continuar aprendiendo y buscar nuevas formas de motivar a los estudiantes a utilizar Python, fomentando su interés por la ciencia y la tecnología. 
+:::
+
+> 🔑 **Nota**: Para aquellos docentes que deseen seguir ampliando sus conocimientos y habilidades, pueden visitar [este sitio de recursos](https://seth-nut.github.io/resources/) para acceder a material educativo adicional.

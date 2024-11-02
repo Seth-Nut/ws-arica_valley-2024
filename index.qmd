@@ -1,0 +1,36 @@
+# 🏠 Home
+
+
+Este espacio ha sido creado para inspirar a los estudiantes a aprender Python y conceptos fundamentales de programación. En este repositorio, encontrarás ejemplos prácticos y autocontenidos que te permitirán comprender y practicar los principios básicos de la programación en Python, explorando aplicaciones de una manera sencilla y efectiva.
+
+<center>
+<img src="./images/logo_colegio.png" width="600">
+</center>
+
+
+
+Esta iniciativa apoya a los alumnos del [Colegio Azapa Valley School](https://azapavalley.cl/), promoviendo el valor de la programación en la enseñanza secundaria y fomentando habilidades esenciales para el futuro.
+
+
+## 🎯 Objetivo del Taller
+
+Motivar a los estudiantes en el aprendizaje de Python y la programación, empleando ejercicios interactivos para desarrollar habilidades prácticas en la creación de funciones, manipulación de datos y resolución de problemas.
+
+## 📚 Resultados de Aprendizaje Esperados 
+
+Al finalizar el taller, los estudiantes podrán:
+
+1. **💻 Comprender conceptos básicos de programación en Python**, como la creación de funciones.
+2. **🌐 Ejecutar código en un entorno interactivo** para explorar Python directamente en el navegador.
+3. **🧩 Resolver problemas con operaciones matemáticas y lógica condicional** en Python.
+4. **🔍 Modificar ejemplos de código** para observar resultados y fomentar la experimentación.
+
+## 🚀 Talleres
+
+**Taller Estudiantes**:
+
+ -  [Primeros Pasos](./material/talleres/intro.html)
+ -  [Introducción a Python](./material/talleres/taller_1.html)
+
+
+> 💡 **Consejo**: Para optimizar la experiencia en los talleres, se recomienda que cada estudiante disponga de su propio notebook, o que la actividad se realice en un entorno adecuado, como un laboratorio de computación.
