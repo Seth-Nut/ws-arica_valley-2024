@@ -24,7 +24,17 @@
     "href": "index.html#resultados-de-aprendizaje-esperados",
     "title": "💻 Workshops",
     "section": "📚 Resultados de Aprendizaje Esperados",
-    "text": "📚 Resultados de Aprendizaje Esperados\nAl finalizar el taller, los estudiantes podrán:\n\n💻 Comprender conceptos básicos de programación en Python, como la creación de funciones.\n🌐 Ejecutar código en un entorno interactivo para explorar Python directamente en el navegador.\n🧩 Resolver problemas con operaciones matemáticas y lógica condicional en Python.\n🔍 Modificar ejemplos de código para observar resultados y fomentar la experimentación.",
+    "text": "📚 Resultados de Aprendizaje Esperados\nAl finalizar el taller, los estudiantes habrán desarrollado habilidades clave para la programación y el razonamiento matemático, aplicables en la prueba PAES y en el ámbito universitario:\n\n💻 Comprensión de conceptos básicos de programación en Python y pensamiento estructurado.\n🌐 Ejecución de código en un entorno interactivo, fomentando la autonomía en la resolución de problemas.\n🧩 Resolución de problemas prácticos usando lógica y operaciones matemáticas, reforzando el modelamiento y análisis crítico.\n🔍 Modificación de código para observar resultados, estimulando la curiosidad y la indagación en matemáticas avanzadas.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#cronograma",
+    "href": "index.html#cronograma",
+    "title": "💻 Workshops",
+    "section": "📅 Cronograma",
+    "text": "📅 Cronograma\n\n\n\n\n\n\n\n\nPrograma de actividades\n\n\nHorario de eventos del día\n\n\nInicio\nTérmino\nActividad\n\n\n\n\n10:00\n10:20\nIntroducción: Presentación del taller y objetivos\n\n\n10:20\n11:15\nActividades Prácticas: Ejercicios interactivos y resolución de problemas\n\n\n11:15\n11:30\nCierre y Preguntas: Resumen, preguntas y premiaciones",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
     ]
@@ -242,7 +252,7 @@
     "href": "material/anexos/autoria.html",
     "title": "Autoría",
     "section": "",
-    "text": "Este material ha sido creado por Francisco Alfaro y Valeska Canales para apoyar las Olimpiadas de Matemática del Departamento de Matemáticas de la UTFSM, Campus San Joaquín.\nSu objetivo es motivar a los estudiantes a aprender Python y disfrutar de las matemáticas mediante herramientas y recursos que faciliten la comprensión y el interés en estos temas. Ofrecemos ejemplos prácticos, problemas entretenidos y actividades interactivas para desarrollar habilidades en Python y profundizar en los conceptos matemáticos presentados en las olimpiadas.\nPara más información, no dudes en contactarnos a través de nuestros correos electrónicos: francisco.alfaro.496@gmail.com, valeska.canales.p@gmail.com.",
+    "text": "Este material ha sido creado por Francisco Alfaro y Valeska Canales para apoyar a los estudiantes del Colegio Azapa Valley School en su aprendizaje de Python y matemáticas.\nNuestro objetivo es motivar a los estudiantes a explorar la programación y las matemáticas de manera divertida y accesible, a través de herramientas y recursos que faciliten la comprensión y el interés en estos temas. Ofrecemos ejemplos prácticos, problemas entretenidos y actividades interactivas que ayudan a desarrollar habilidades en Python y a profundizar en conceptos matemáticos aplicables a su formación.\nPara más información, estamos disponibles en los correos electrónicos: francisco.alfaro.496@gmail.com, valeska.canales.p@gmail.com.",
     "crumbs": [
       "📜 Anexos",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Autoría</span>"
