@@ -18,12 +18,46 @@ Motivar a los estudiantes en el aprendizaje de Python y la programación, emplea
 
 ## 📚 Resultados de Aprendizaje Esperados 
 
-Al finalizar el taller, los estudiantes podrán:
+Al finalizar el taller, los estudiantes habrán desarrollado habilidades clave para la programación y el razonamiento matemático, aplicables en la prueba PAES y en el ámbito universitario:
 
-1. **💻 Comprender conceptos básicos de programación en Python**, como la creación de funciones.
-2. **🌐 Ejecutar código en un entorno interactivo** para explorar Python directamente en el navegador.
-3. **🧩 Resolver problemas con operaciones matemáticas y lógica condicional** en Python.
-4. **🔍 Modificar ejemplos de código** para observar resultados y fomentar la experimentación.
+1. 💻 Comprensión de conceptos básicos de programación en Python y pensamiento estructurado.
+2. 🌐 Ejecución de código en un entorno interactivo, fomentando la autonomía en la resolución de problemas.
+3. 🧩 Resolución de problemas prácticos usando lógica y operaciones matemáticas, reforzando el modelamiento y análisis crítico.
+4. 🔍 Modificación de código para observar resultados, estimulando la curiosidad y la indagación en matemáticas avanzadas.
+
+
+## 📅 Cronograma
+
+```{python}
+#| echo: false
+from great_tables import GT, md
+import pandas as pd
+
+data_cronograma = {
+    "Inicio": [
+        "10:00", "10:20", "11:15"
+    ],
+    "Término": [
+        "10:20", "11:15", "11:30"
+    ],
+    "Actividad": [
+        "Introducción: Presentación del taller y objetivos", 
+        "Actividades Prácticas: Ejercicios interactivos y resolución de problemas", 
+        "Cierre y Preguntas: Resumen, preguntas y premiaciones"
+    ]
+}
+
+df_cronograma = pd.DataFrame(data_cronograma)
+
+(
+    GT(df_cronograma)
+    .tab_header(
+        title="Programa de actividades",
+        subtitle="Horario de eventos del día"
+    ).opt_stylize(style=2, color="blue")
+)
+```
+
 
 ## 🚀 Talleres
 
